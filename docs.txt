@@ -1,0 +1,539 @@
+{Navbar}
+import Image from "next/image"
+import Logo from "../desktop/Logo.png"
+
+
+export default function Navbar(){
+
+return (
+
+<div className="flex justify-around items-center bg-[#043873] h-14">
+
+<Image src={Logo} alt="logo" width={150} height={150} />
+
+<ul className="flex text-white gap-10 font-medium">
+    <li>Products </li>
+    <li>Solutions</li>
+    <li>Resources</li>
+    <li>Pricing</li>
+</ul>
+
+<div className="flex gap-5 font-medium">
+
+<button className="bg-[#FFE492] text-[#043873] rounded h-9 w-20">Login</button>
+<button className="bg-[#4F9CF9] text-white rounded h-10 w-40 text-sm">Try Whitespace free -&gt;</button>
+
+</div>
+
+</div>
+
+)
+
+}
+
+
+
+{herosection}
+
+export default function Herosection(){
+
+return (
+    <div className="bg-[#043873] text-[#ffffff] flex p-28">
+
+<div className="pt-16">
+
+    <h1 className="font-bold text-4xl relative top-9">Get More Done with <br /> whitespace</h1>
+
+<p className="text-sm relative top-12">Project management software that enables your teams to collaborate, plan, <br /> analyze and manage everyday tasks.</p>
+<button className="bg-[#4F9CF9] rounded w-44 h-12 relative top-24">Try whitespace free -&gt;</button>
+    
+</div>
+
+<div className="bg-[#C4DEFD] h-[400px] w-[550px] m-10">
+
+</div>
+
+    </div>
+)
+
+
+}
+
+
+{project management}
+
+
+
+export default function ProjectManagement(){
+
+return (
+
+    <div className="flex p-20">
+
+<div>
+    <h1 className="font-bold text-5xl relative top-20">Project <br /> Management</h1>
+    <p className="text-sm relative top-24">Images, videos, PDFs and audio files are supported. Create math expressions and <br /> diagrams directly from the app. Take Photos with the mobile app and save them <br /> to a note.</p>
+    <button className="bg-[#4F9CF9] text-[#FFFFFF] rounded w-44 h-12 relative top-36">Get Started -&gt;</button>
+
+</div>
+
+<div className="bg-[#C4DEFD] h-[400px] w-[550px] m-10">
+
+</div>
+
+
+    </div>
+)
+}
+
+{work togeather}
+
+ import Image from "next/image"
+import work from "../desktop/Work Together Image.png"
+
+
+export default function WorkTogeather(){
+
+return (
+    <div className="flex justify-center gap-12 p-12">
+
+<Image src={work} alt="workTOgeather" width={300} height={300}/>
+
+
+<div>
+
+<h1 className="font-bold text-4xl mt-16">Work together</h1>
+
+<p className="text-sm mt-4">With whitespace, share your notes with your coleaguesand collaborate on them. <br /> You can also publish a note to the internet and share the URL with others.</p>
+
+<button className="bg-[#4F9CF9] text-[#FFFFFF] text-sm rounded w-24 h-10 mt-5">Try it now -&gt;</button>
+
+</div>
+
+
+    </div>
+)
+
+}
+
+
+{extension}
+
+
+export default function Extension() {
+
+
+    return (
+        <div className="flex bg-[#043873] text-[#ffffff] p-20 gap-5">
+
+            <div>
+
+                <h1 className="font-bold text-4xl mt-24">Use as Extension</h1>
+                <p className="mt-10">Use the web clipper extension, available on chrome and Firefox, to save the web pages <br /> or take screenshots as notes.</p>
+ 
+                <button className="bg-[#4F9CF9] rounded text-sm w-28 h-10 mt-20">Let's Go -&gt;</button>
+
+            </div>
+
+
+            <div className="bg-[#C4DEFD] h-[350px] w-[450px] m-10">
+
+            </div>
+
+
+        </div>
+    )
+}
+
+{customize}
+
+export default function Customize() {
+
+    return (
+        <div className="flex justify-center gap-5">
+
+            <div className="bg-[#C4DEFD] h-[350px] w-[450px] m-10">
+
+            </div>
+
+            <div>
+<h1 className="font-bold text-4xl pt-20">Customize it to <br /> your needs</h1>
+<p className="text-sm mt-10">Customize the app with plugins, custom themes and multiple text editors (Rich <br /> Text or MArkdown). Or create your own scripts and plugins using the Extension  <br />  API.</p>
+
+
+<button className="bg-[#4F9CF9] rounded text-sm w-28 h-10 mt-10 text-[#FFFFFF]">Let's Go -&gt;</button>
+            </div>
+
+        </div>
+    )
+
+}
+
+{choose your plane}
+
+import Image from "next/image"
+import icon from "../desktop/Icon.png"
+import icon1 from "../desktop/Icon1.png"
+
+export default function Plane() {
+    return (
+
+        <div className="m-5">
+
+            <div>
+                <h1 className="font-bold text-4xl text-center m-8">Choose Your Plan</h1>
+                <p className="text-xs text-center m-8">Wheather you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the <br /> right plan for you. </p>
+            </div>
+
+            <div className="flex gap-5">
+
+                <div className="p-10 text-xs border border-[#FFE492] h-96 rounded relative top-14">
+                    <p className="font-bold m-5">Free</p>
+                    <h4 className="font-bold m-5">$0</h4>
+                    <p className="m-5">Capture ideas and find them quickly</p>
+
+                    <ul>
+                        <li className="flex gap-2 m-2"><Image src={icon1} alt="icon" width={10} height={5} />  Sync unlimited devices</li>
+                        <li className="flex gap-2 m-2"><Image src={icon1} alt="icon" width={10} height={5} /> 10GB monthly uploads</li>
+                        <li className="flex gap-2 m-2"><Image src={icon1} alt="icon" width={10} height={5} /> 200MB max. note size</li>
+                        <li className="flex gap-2 m-2"><Image src={icon1} alt="icon" width={10} height={5} /> Customize Home dashboard and access extra widgets</li>
+                        <li className="flex gap-2 m-2"><Image src={icon1} alt="icon" width={10} height={5} /> Connect primary Google Calander account</li>
+                        <li className="flex gap-2 m-2"><Image src={icon1} alt="icon" width={10} height={5} /> Add due dates, reminders, and notifications to your tasks</li>
+                        <li className="m-3">
+                            <button className="border border-[#FFE492] h-9 w-24 rounded">Get Started</button>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div className="bg-[#043873] text-[#FFFFFF] rounded pt-16 text-xs h-[500px] p-10">
+                    <p className="font-bold m-5">Personal</p>
+                    <p className="font-bold text-[#FFE492] m-5">$11.99</p>
+                    <p className="m-5">Keep home and family on track</p>
+
+                    <ul>
+                        <li className="flex gap-2 m-1"><Image src={icon} alt="icon" width={10} height={5} />  Sync unlimited devices</li>
+                        <li className="flex gap-2 m-1"><Image src={icon} alt="icon" width={10} height={5} /> 10GB monthly uploads</li>
+                        <li className="flex gap-2 m-1"><Image src={icon} alt="icon" width={10} height={5} /> 200MB max. note size</li>
+                        <li className="flex gap-2 m-1"><Image src={icon} alt="icon" width={10} height={5} /> Customize Home dashboard and access extra widgets</li>
+                        <li className="flex gap-2 m-1"><Image src={icon} alt="icon" width={10} height={5} /> Connect primary Google Calander account</li>
+                        <li className="flex gap-2 m-1"><Image src={icon} alt="icon" width={10} height={5} /> Add due dates, reminders, and notifications to your tasks</li>
+                        <li className="m-3">
+                            <button className="bg-[#4f9cf9] text-[#ffffff] h-9 w-24 rounded ">Get Started</button>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div className="p-10 text-xs border border-[#FFE492] h-96 rounded relative top-14">
+
+                    <p className="font-bold m-5">Organization</p>
+                    <p className="font-bold m-5">$49.99</p>
+                    <p className="m-5">Capture ideas and find them quickly</p>
+
+                    <ul>
+                        <li className="flex gap-2 m-1"><Image src={icon1} alt="icon" width={5} height={5} />  Sync unlimited devices</li>
+                        <li className="flex gap-2 m-1"><Image src={icon1} alt="icon" width={10} height={5} /> 10GB monthly uploads</li>
+                        <li className="flex gap-2 m-1"><Image src={icon1} alt="icon" width={10} height={5} /> 200MB max. note size</li>
+                        <li className="flex gap-2 m-1"><Image src={icon1} alt="icon" width={10} height={5} /> Customize Home dashboard and access extra widgets</li>
+                        <li className="flex gap-2 m-1"><Image src={icon1} alt="icon" width={10} height={5} /> Connect primary Google Calander account</li>
+                        <li className="flex gap-2 m-1"><Image src={icon1} alt="icon" width={10} height={5} /> Add due dates, reminders, and notifications to your tasks</li>
+                        <li className="m-3">
+                            <button className="border border-[#FFE492] h-9 w-24 rounded">Get Started</button>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+    )
+}
+
+
+{your data}
+
+
+import Image from "next/image"
+import element from "../desktop/Element.png"
+
+
+let Data = () => {
+
+return (
+    <div className="flex justify-center gap-5 p-10">
+
+        <div>
+
+            <h1 className="font-bold text-4xl">100% your data</h1>
+        <p className="text-sm mt-5">The app is open source and your notes are saved to an open format, so you'll always have access <br /> to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but <br /> yourself can access them.</p>
+        
+        <button className="bg-[#4F9CF9] text-[#FFFFFF] rounded w-40 h-10 mt-10">Read more -&gt;</button>
+        </div>
+    
+<div>
+<Image src={element} alt="element" width={400} height={400}/>
+</div>
+    
+    </div>
+)
+
+
+}
+
+export default Data
+
+{sponsors}
+
+import Image from "next/image"
+import apple from "../desktop/apple-black-logo 2.png"
+import microsoft from "../desktop/microsoft 1.png"
+import slack from "../desktop/Slack_Technologies_Logo 1.png"
+import google from "../desktop/Group 246.png"
+
+export default function Sponsors(){
+
+return (
+    <div className="p-10">
+<h1 className="text-4xl font-bold text-center">Our Sponsors</h1>
+
+<div className="flex justify-evenly mt-10">
+
+<Image src={apple} alt="apple" width={50} height={50}/>
+<Image src={microsoft} alt="microsoft" width={50} height={50}/>
+<Image src={slack} alt="slack" width={50} height={20}/>
+<Image src={google} alt="google" width={60} height={30}/>
+
+</div>
+
+
+    </div>
+)
+
+}
+
+{favorite}
+
+import Image from "next/image";
+import Apps from "../desktop/Apps.png"
+
+export default function Favorite(){
+
+    return (
+        <div className="flex text-[#FFFFFF] bg-[#043873] justify-center gap-14 p-14">
+        
+        <div>
+        <Image src={Apps} alt="apps" width={300} height={350}/>
+        </div>
+
+
+<div>
+
+<h1 className="font-bold text-5xl">Work with your <br /> Favorite Apps Using <br /> Whitespace</h1>
+<p className="text-sm mt-5">Whitespace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to <br /> have all the tools you need for your protect success.</p>
+
+<button className="bg-[#4F9CF9] text-[#FFFFFF] rounded w-40 h-10 mt-10">Read more -&gt;</button>
+</div>
+
+        </div>
+    )
+}
+
+
+{clients}
+
+import Image from "next/image";
+import avater1 from "../desktop/Avater1.png"
+import avater2 from "../desktop/Avater2.png"
+import avater3 from "../desktop/Avater3.png"
+import Quote from "../desktop/Quote1.png"
+import Group from "../desktop/Group.png"
+import Group1 from "../desktop/Group1.png"
+
+
+export default function Clients() {
+    return (
+        <div>
+
+            <h1 className="text-4xl font-bold text-center m-12">What Our Clients Says</h1>
+
+            <div className="flex justify-center gap-5">
+
+                <div className="text-xs w-56 h-64 rounded">
+
+
+                <Image src={Quote} alt="Quote" width={40} height={40} className="m-5"/>
+
+                    <p className="p-2">Whitespace is designed as a collaboration tool <br /> for businesses that is a full project management solution.</p>
+
+                    <hr className="p-2 w-44 mx-auto"/>
+
+                    <div className="flex gap-5 p-2">
+
+                        <Image src={avater1} alt="avater1" width={40} height={40} />
+
+                        <div>
+                            <h5 className="font-bold m-2">Oberon Shaw, MCH</h5>
+                            <p>Head of Talent Acquisition, North America</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div className="bg-[#4F9CF9] text-[#FFFFFF] text-xs w-56 h-64 rounded">
+
+
+                <Image src={Group} alt="Group" width={40} height={40} className="m-5"/>
+
+                    <p className="p-2">Whitespace is designed as a collaboration tool <br /> for businesses that is a full project management solution.</p>
+
+                    <hr className="p-2 w-44 mx-auto"/>
+
+                    <div className="flex gap-5 p-2">
+
+                        <Image src={avater2} alt="avater2" width={40} height={40} />
+
+                        <div>
+                            <h5 className="text-[#043873] font-bold m-2">Oberon Shaw, MCH</h5>
+                            <p>Head of Talent Acquisition, North America</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className="bg-[#4F9CF9] text-[#FFFFFF] text-xs w-56 h-64 rounded">
+
+
+                <Image src={Group1} alt="Group1" width={40} height={40} className="m-5"/>
+
+                    <p className="p-2">Whitespace is designed as a collaboration tool <br /> for businesses that is a full project management solution.</p>
+
+                    <hr className="p-2 w-44 mx-auto"/>
+
+                    <div className="flex gap-5 p-2">
+                        <Image src={avater3} alt="avater3" width={50} height={50} />
+                        <div>
+                            <h5 className="text-[#043873] font-bold m-1">Oberon Shaw, MCH</h5>
+                            <p>Head of Talent Acquisition, North America</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    )
+}
+
+
+{footer}
+
+import Image from "next/image"
+import img from "../desktop/Logo.png"
+import apple from "../desktop/apple-black-logo 2.png"
+import microsoft from "../desktop/windows-logo 1.png"
+import android from "../desktop/desktop/Group.png"
+
+
+export default function Footer(){
+    return (
+
+        <footer className="bg-[#043873] text-[#ffffff] p-10 mt-16">
+
+<div>
+
+<h1 className="font-bold text-center text-3xl">Try Whitespace <br /> today</h1>
+
+<p className="text-center text-sm mt-5">Get started for free.</p>
+<p className="text-center text-sm">Add your whole team as your needs grow.</p>
+ 
+ <button className="ml-[550px] bg-[#4F9CF9] text-sm rounded h-10 w-36 m-8">Try Taskey free -&gt;</button>
+
+ <p className="text-center text-sm">On a big team? Contact sales</p>
+
+
+ <ul className="flex justify-center gap-5 m-5">
+
+<li>
+
+<Image src={apple} alt="apple logo" height={30} width={30}/>
+
+</li>
+<li>
+<Image src={microsoft} alt="microsoft" width={30} height={30}/>
+</li>
+
+<li>
+<Image src={android} alt="android" width={30} height={30}/>
+</li>
+
+ </ul>
+
+</div>
+    
+
+    
+<div className="flex justify-evenly">
+
+<ul>
+    <li>
+        <Image src={img} alt="img" height={100} width={100}/>
+    </li>
+    <li>
+        <p className="text-sm">whitespace was created for <br /> the new ways we live and <br /> work. We make a better <br /> workspace around the world</p>
+    </li>
+
+</ul>
+
+<ul>
+    <li className="font-bold">Product</li>
+    <li className="text-[#FFE492] text-sm">Overview</li>
+    <li className="text-sm">Pricing</li>
+    <li className="text-sm">Customer stories</li>
+</ul>
+
+<ul>
+    <li className="font-bold">Resources</li>
+    <li className="text-sm">Blog</li>
+    <li className="text-sm">Guidelines & tutorials</li>
+    <li className="text-sm">Help center</li>
+</ul>
+
+
+<ul>
+    <li className="font-bold">Company</li>
+    <li className="text-sm">About us</li>
+    <li className="text-sm">Careers</li>
+    <li className="text-sm">Media kit</li>
+</ul>
+
+
+<ul>
+    <li className="font-bold">Try it Today</li>
+    <li className="text-sm">Get started for free. Add your <br /> whole team as your needs grow.</li>
+    <li>
+        <button className="bg-[#4F9CF9] rounded w-36 h-10 text-sm mt-5">Start today -&gt;</button>
+    </li>
+
+    </ul>
+
+</div>
+
+        </footer>
+
+
+    )
+}
